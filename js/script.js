@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		plugins: [ 'interaction', 'dayGrid', 'list', 'googleCalendar' ],
 
 		header: {
-			left: 'prev,next today',
+			left: 'prev,next',
 			center: 'title',
-			right: 'dayGridMonth,listYear'
+			right: ''
 		},
 		locale: 'ja',
 		businessHours: true, // display business hours
