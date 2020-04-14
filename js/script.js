@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		eventClick: function(arg) {
 			// opens events in a popup window
-			window.open(arg.event.url, 'google-calendar-event', 'width=700,height=600');
+			//window.open(arg.event.url, 'google-calendar-event', 'width=700,height=600');
 
 			arg.jsEvent.preventDefault() // don't navigate in main tab
 		},
@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 
 	});
+
 
 	calendar.render();
 });
