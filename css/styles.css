@@ -495,6 +495,10 @@ footer p a{
 	margin: 0 auto;
 }
 
+.fc table{
+	font-size: 0.7em !important;
+}
+
 /* -- Demo ads -- */
 
 @media (max-width: 1200px) {
