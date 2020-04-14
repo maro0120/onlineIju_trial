@@ -36,6 +36,14 @@ a:hover{
 	opacity: 1;
 }
 
+li.icons{
+
+}
+
+h4 span{
+	border-bottom: solid 4px #ffcf07;
+}
+
 a.btn{
 	color: #fff;
 	border-radius: 4px;
@@ -275,9 +283,11 @@ a.btn{
 }
 
 .features .grid li{
-	padding: 0 30px;
-	flex-basis: 33%;
+	padding: 30px 30px;
+	margin: 0px 5px;
+	flex-basis: 30%;
 	text-align: center;
+	background-color: #ffffff;
 }
 
 .features .grid li i{
@@ -294,6 +304,12 @@ a.btn{
 
 .features .grid li p{
     margin: 0;
+}
+
+.linkbtn {
+	padding: 18px 42px;
+	margin-top: 10%;
+	font-size: 1.3rem;
 }
 
 @media (max-width: 1000px){
@@ -417,7 +433,7 @@ footer{
 	text-align: center;
 	color: #fff;
 	background-color: #414a4f;
-	padding: 60px 0;
+	padding: 30px 0;
 	margin-top: 20px;
 }
 
@@ -453,7 +469,7 @@ footer p a{
 @media (max-width: 700px){
 
 	footer{
-		padding: 80px 15px;
+		padding: 30px 15px;
 	}
 
 }
@@ -475,4 +491,11 @@ footer p a{
 
 @media (max-width: 1200px) {
 	#bsaHolder{ display:none;}
+}
+
+
+/* -- google calendar -- */
+iframe {
+  width: 80vw;
+  height: 80vw;
 }
