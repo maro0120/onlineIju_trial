@@ -511,3 +511,36 @@ iframe {
   width: 80vw;
   height: 80vw;
 }
+
+
+
+
+/* -- svg logo -- */
+.logo {
+    position: fixed;
+    top: 22px;
+    left: 22px;
+    z-index: 1000;
+}
+@media screen and (max-width: 900px){
+	.logo {
+	    top: 8px;
+	    left: 8px;
+	}
+}
+
+.logo a {
+    display: block;
+    width: 144px;
+    height: 75px;
+    background: url(../img/logo.svg) no-repeat;
+    background-size: contain;
+    font-size: 0;
+}
+
+@media screen and (max-width: 900px){
+	.logo a {
+	    width: 65px;
+	    height: 34px;
+	}
+}
