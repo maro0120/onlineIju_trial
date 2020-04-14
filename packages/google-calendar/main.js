@@ -151,7 +151,8 @@ Docs & License: https://fullcalendar.io/
             title: item.summary,
             start: item.start.dateTime || item.start.date,
             end: item.end.dateTime || item.end.date,
-            url: url,
+            // 20200414 remove url
+            // url: url,
             location: item.location,
             description: item.description
         };
