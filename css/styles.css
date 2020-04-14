@@ -381,7 +381,15 @@ a.btn{
 /*---------------------
  	Contact Section
 ---------------------*/
+@media (max-width: 600px){
 
+	.contact{
+		padding: 10px 5px;
+		background-color: #fff8ea;
+		margin-top: 20px;
+	}
+
+}
 .contact{
 	background-color: #fff8ea;
 	margin-top: 20px;
