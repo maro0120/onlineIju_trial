@@ -548,3 +548,18 @@ iframe {
 	    height: 34px;
 	}
 }
+
+/* -- fc-button -- */
+.fc-button {
+	background-color: #ffcf07 !important;
+	border-color: #ffcf07 !important;
+}
+
+@media screen and (max-width: 900px){
+	.fc-button {
+		padding: 0.15em 0.35em !important;
+		font-size: 0.8em !important;
+	}
+}
+
+
