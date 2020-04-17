@@ -45,12 +45,14 @@ h4 span{
 }
 
 a.btn{
-	color: #fff;
+	color: #000000;
 	border-radius: 4px;
 	text-transform: uppercase;
 	background-color: #ffcf07;
 	font-weight: 800;
 	text-align: center;
+	font-size: 2em;
+	padding: 0.8em 5em;
 }
 
 hr{
@@ -91,6 +93,7 @@ section h3.title{
 	font: bold 32px 'Open Sans', sans-serif;
 	margin-bottom: 35px;
 	text-align: center;
+  padding-bottom: 2px;
 }
 
 section p{
@@ -205,10 +208,6 @@ header nav li:last-child{
 .hero h3{
 	font: normal 28px 'Open Sans', sans-serif;
 	margin-bottom: 40px;
-}
-
-a.btn{
-	padding: 20px 46px;
 }
 
 @media (max-width: 800px){
@@ -562,4 +561,7 @@ iframe {
 	}
 }
 
-
+.under {
+	text-decoration:underline;
+	text-decoration-color:#ffcf07;
+}
