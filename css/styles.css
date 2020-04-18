@@ -411,7 +411,7 @@ header nav li:last-child{
 }
 
 .reviews .grid li.large{
-	flex-basis: 60%;
+	flex-basis: 100%;
 }
 
 
