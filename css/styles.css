@@ -9,7 +9,7 @@
 }
 body {
 	font-family: "Amiko", "Helvetica", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	text-align: center;
 	color: #0a0e1f;
 	background-color: #fff;
@@ -17,7 +17,7 @@ body {
 }
 @media (min-width: 640px) {
   body{
-    font-size: calc(16px + ((1vw - 6.4px)*3.571));
+    font-size: calc(14px + ((1vw - 6.4px)*3.571));
   }
 }
 @media (min-width: 1200px) {
@@ -409,7 +409,7 @@ div.img-box2 {
 }
 
 .contents-box3 img{
-	height: 100%;
+	width: 90%;
 }
 
 @media (max-width: 1000px){
