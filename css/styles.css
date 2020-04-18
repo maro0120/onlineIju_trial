@@ -55,6 +55,19 @@ a.btn{
 	padding: 0.8em 5em;
 }
 
+@media screen and (max-width: 900px){
+	a.btn{
+		color: #000000;
+		border-radius: 4px;
+		text-transform: uppercase;
+		background-color: #ffcf07;
+		font-weight: 800;
+		text-align: center;
+		font-size: 1.2em;
+		padding: 0.8em 2em;
+	}
+}
+
 hr{
 	width: 150px;
 	height: 2px;
@@ -90,17 +103,21 @@ section{
 section h3.title{
 	color: #414a4f;
 	text-transform: capitalize; 
-	font: bold 32px 'Open Sans', sans-serif;
+	font: bold 2em 'Open Sans', sans-serif;
 	margin-bottom: 35px;
 	text-align: center;
   padding-bottom: 2px;
 }
-
+@media screen and (max-width: 900px){
+	section h3.title {
+		font: bold 1.2em 'Open Sans', sans-serif;
+	}
+}
 section p{
 	max-width: 800px;
 	text-align: center;
 	margin-bottom: 35px;
-	padding: 0 20px;
+	padding: 0 5px;
 	line-height: 2;
 }
 
@@ -174,7 +191,7 @@ header nav li:last-child{
 	position: relative;
 	justify-content: center;
 	min-height: 100vh;
-	color: #fff;
+	color: #000000;
 	text-align: center;
 }
 
@@ -185,7 +202,7 @@ header nav li:last-child{
 	width: 100%;
 	height: 100%;
 	background-size: cover;
-	background-color: #ffcf07;
+	background:linear-gradient(90deg,#5208FF 0%,#5208FF 50%,#ffcf07 50%,#ffcf07 100%);
 	z-index: -1;
 }
 
@@ -196,12 +213,12 @@ header nav li:last-child{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #ffcf07;
+	background:linear-gradient(90deg,#5208FF 0%,#5208FF 50%,#ffcf07 50%,#ffcf07 100%);
 	opacity: 0.75;
 }
 
 .hero h1{
-	font: bold 60px 'Open Sans', sans-serif;
+	font: bold 3em 'Open Sans', sans-serif;
 	margin-bottom: 15px;
 }
 
@@ -217,11 +234,11 @@ header nav li:last-child{
 	}
 
 	.hero h1{
-		font-size: 48px;
+		font-size: 2.5em;
 	}
 
 	.hero h3{
-		font-size: 24px;
+		font-size: 1.5em;
 	}
 
 	.hero a.btn{
@@ -378,7 +395,24 @@ header nav li:last-child{
 	}
 
 }
+.reviews .grid li{
+	padding: 20px;
+	height: 350px;
+	border-radius: 3px;
 
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+}
+
+.reviews .grid li.small{
+	flex-basis: 40%;
+}
+
+.reviews .grid li.large{
+	flex-basis: 60%;
+}
 
 
 /*---------------------
@@ -561,7 +595,17 @@ iframe {
 	}
 }
 
-.under {
+span.under {
 	text-decoration:underline;
 	text-decoration-color:#ffcf07;
+}
+
+span.line1 {
+	display: inline-block;
+}
+
+@media screen and (max-width: 900px){
+	h3 br {
+		display: none;
+	}
 }
