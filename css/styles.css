@@ -1,0 +1,609 @@
+/*-------------
+ 	General
+-------------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Amiko", "Helvetica", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	color: #0a0e1f;
+	background-color: #fff;
+	font-feature-settings: "palt";
+}
+html{
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+ul, nav{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+
+	opacity: 0.9;
+}
+
+a:hover{
+	opacity: 1;
+}
+
+li.icons{
+
+}
+
+h4 span{
+	border-bottom: solid 4px #ffcf07;
+}
+
+a.btn{
+	color: #000000;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #ffcf07;
+	font-weight: 800;
+	text-align: center;
+	font-size: 2em;
+	padding: 0.8em 5em;
+}
+
+@media screen and (max-width: 900px){
+	a.btn{
+		color: #000000;
+		border-radius: 4px;
+		text-transform: uppercase;
+		background-color: #ffcf07;
+		font-weight: 800;
+		text-align: center;
+		font-size: 1.2em;
+		padding: 0.8em 2em;
+	}
+}
+
+hr{
+	width: 150px;
+	height: 2px;
+	background-color: #ffcf07;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 125px 100px;
+}
+
+@media (max-width: 1000px){
+
+	section{
+		padding: 100px 50px;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	section{
+		padding: 80px 30px;
+	}
+
+}
+
+section h3.title{
+	color: #414a4f;
+	text-transform: capitalize; 
+	font: bold 2em 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+  padding-bottom: 2px;
+}
+@media screen and (max-width: 900px){
+	section h3.title {
+		font: bold 1.2em 'Open Sans', sans-serif;
+	}
+}
+section p{
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 5px;
+	line-height: 2;
+}
+
+ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+/*-------------
+ 	Header
+-------------*/
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 35px 100px 0;
+}
+
+header nav{
+	display: flex;
+}
+
+header nav li{
+	margin: 0 15px;
+}
+
+header nav li:first-child{
+	margin-left: 0;	
+}
+
+header nav li:last-child{
+	margin-right: 0;	
+}
+
+
+
+@media (max-width: 1000px){
+	header{
+		padding: 20px 50px;
+	}
+}
+
+
+@media (max-width: 700px){
+	header{
+		flex-direction: column;		
+	}
+
+	header h2{
+		margin-bottom: 15px;
+	}
+}
+
+
+
+/*----------------
+ 	Hero Section
+----------------*/
+
+.hero{
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #000000;
+	text-align: center;
+}
+
+.hero .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background:linear-gradient(90deg,#5208FF 0%,#5208FF 50%,#ffcf07 50%,#ffcf07 100%);
+	z-index: -1;
+}
+
+.hero .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:linear-gradient(90deg,#5208FF 0%,#5208FF 50%,#ffcf07 50%,#ffcf07 100%);
+	opacity: 0.75;
+}
+
+.hero h1{
+	font: bold 3em 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+}
+
+.hero h3{
+	font: normal 28px 'Open Sans', sans-serif;
+	margin-bottom: 40px;
+}
+
+@media (max-width: 800px){
+
+	.hero{
+		min-height: 600px;
+	}
+
+	.hero h1{
+		font-size: 2.5em;
+	}
+
+	.hero h3{
+		font-size: 1.5em;
+	}
+
+	.hero a.btn{
+		padding: 15px 40px;
+	}
+	
+	.hero span{
+		display: inline-block;
+	}
+
+}
+
+
+
+/*--------------------
+ 	Our Work Section
+---------------------*/
+
+.our-work{
+	background-color: #fff8ea;
+	margin: 1em 1em 0em 1em;
+}
+
+.our-work .grid li{
+	padding: 20px;
+	height: 350px;
+	border-radius: 3px;
+
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+}
+
+.our-work .grid li.small{
+	flex-basis: 40%;
+}
+
+.our-work .grid li.large{
+	flex-basis: 60%;
+}
+
+
+@media (max-width: 1000px){
+
+	.our-work .grid li.small,
+	.our-work .grid li.large{
+		flex-basis: 100%;
+	}
+
+}
+
+
+
+/*----------------------
+ 	Features Section
+----------------------*/
+
+.features{
+	background-color: #fff8ea;
+	margin: 1em 1em 0em 1em;
+}
+
+.features .grid li{
+	padding: 30px 30px;
+	margin: 0px 5px;
+	flex-basis: 30%;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.features .grid li i{
+    font-size: 50px;
+    color: #ffcf07;
+    margin-bottom: 25px;
+}
+
+.features .grid li h4{
+	color: #555;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.features .grid li p{
+    margin: 0;
+}
+
+.linkbtn {
+	padding: 18px 42px;
+	margin-top: 10%;
+	font-size: 1.3rem;
+}
+
+@media (max-width: 1000px){
+
+	.features .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.features .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+
+@media (max-width: 600px){
+
+	.features .grid li{
+		flex-basis: 100%;
+	}
+
+}
+
+
+
+/*--------------------
+ 	Reviews Section
+--------------------*/
+
+.reviews{
+	background-color: #fff8ea;
+	margin: 1em 1em 0em 1em;
+}
+div.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+div.contents-box2 {
+	flex-basis: 45%;
+	text-align: left;
+	margin: 1em;
+}
+div.contents-box3 {
+	flex-basis: 31%;
+	text-align: center;
+	margin: 1em;
+}
+.margin-btm {
+	margin-bottom: 1em;
+}
+.aligh-left {
+	text-align: left;
+}
+
+div.img-box2 {
+	flex-basis: 45%;
+	text-align: center;
+	margin: 1em;
+}
+
+.img-box2 img{
+	width: 100%;
+	height: 100%;
+}
+
+.contents-box3 img{
+	width: 100%;
+}
+
+@media (max-width: 1000px){
+
+	div.contents-box2,
+	div.contents-box3,
+	div.img-box2{
+		flex-basis: 100%;
+	}
+
+}
+
+/*---------------------
+ 	Contact Section
+---------------------*/
+@media (max-width: 600px){
+
+	.contact{
+		padding: 10px 5px;
+		background-color: #fff8ea;
+		margin: 1em 1em 0em 1em;
+	}
+
+}
+.contact{
+	background-color: #fff8ea;
+	margin: 1em 1em 0em 1em;
+}
+
+.contact form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	max-width: 800px;
+	width: 80%;
+}
+
+.contact form input{
+	padding: 15px;
+	flex: 1;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #555;
+}
+
+.contact form .btn{
+	padding: 18px 42px;
+}
+
+
+@media (max-width: 800px){
+
+	.contact form input{
+		flex-basis: 100%;
+		margin: 0 0 20px 0;
+	}
+
+}
+
+
+
+
+/*-------------
+ 	Footer
+-------------*/
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	background-color: #414a4f;
+	padding: 30px 0;
+	margin-top: 20px;
+}
+
+footer ul{
+	display: flex;
+	margin-bottom: 25px;
+	font-size: 32px;
+}
+
+footer ul li{
+	margin: 0 8px;	
+}
+
+footer ul li:first-child{
+	margin-left: 0;	
+}
+
+footer ul li:last-child{
+	margin-right: 0;	
+}
+
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 10px;
+}
+
+footer p a{
+	color: #fff;
+}
+
+@media (max-width: 700px){
+
+	footer{
+		padding: 30px 15px;
+	}
+
+}
+
+/* -- fullcalendar -- */
+#loading {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#calendar {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.fc table{
+	font-size: 0.7em !important;
+}
+
+/* -- Demo ads -- */
+
+@media (max-width: 1200px) {
+	#bsaHolder{ display:none;}
+}
+
+
+/* -- google calendar -- */
+iframe {
+  width: 80vw;
+  height: 80vw;
+}
+
+
+
+
+/* -- svg logo -- */
+.logo {
+    position: fixed;
+    top: 22px;
+    left: 22px;
+    z-index: 1000;
+}
+@media screen and (max-width: 900px){
+	.logo {
+	    top: 8px;
+	    left: 8px;
+	}
+}
+
+.logo a {
+    display: block;
+    width: 144px;
+    height: 75px;
+    background: url(../img/logo.svg) no-repeat;
+    background-size: contain;
+    font-size: 0;
+}
+
+@media screen and (max-width: 900px){
+	.logo a {
+	    width: 65px;
+	    height: 34px;
+	}
+}
+
+/* -- fc-button -- */
+.fc-button {
+	background-color: #ffcf07 !important;
+	border-color: #ffcf07 !important;
+}
+
+@media screen and (max-width: 900px){
+	.fc-button {
+		padding: 0.15em 0.35em !important;
+		font-size: 0.8em !important;
+	}
+}
+
+span.under {
+	text-decoration:underline;
+	text-decoration-color:#ffcf07;
+}
+
+span.line1 {
+	display: inline-block;
+}
+
+@media screen and (max-width: 900px){
+	h3 br {
+		display: none;
+	}
+}
