@@ -259,7 +259,7 @@ header nav li:last-child{
 
 .our-work{
 	background-color: #fff8ea;
-	margin: 1em 1em 0em 1em;
+	margin-top: 20px;
 }
 
 .our-work .grid li{
@@ -299,7 +299,7 @@ header nav li:last-child{
 
 .features{
 	background-color: #fff8ea;
-	margin: 1em 1em 0em 1em;
+	margin-top: 20px;
 }
 
 .features .grid li{
@@ -362,56 +362,58 @@ header nav li:last-child{
 
 .reviews{
 	background-color: #fff8ea;
-	margin: 1em 1em 0em 1em;
-}
-div.grid{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-
+	margin-top: 20px;
 }
 
-div.contents-box2 {
-	flex-basis: 45%;
-	text-align: left;
-	margin: 1em;
-}
-div.contents-box3 {
-	flex-basis: 31%;
+.reviews .quote{
 	text-align: center;
-	margin: 1em;
-}
-.margin-btm {
-	margin-bottom: 1em;
-}
-.aligh-left {
-	text-align: left;
-}
-
-div.img-box2 {
-	flex-basis: 45%;
-	text-align: center;
-	margin: 1em;
+	width: 80%;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0;
 }
 
-.img-box2 img{
-	width: 100%;
-	height: 100%;
+.reviews .author{
+    font-size: 18px;
+    margin-bottom: 50px;
 }
 
-.contents-box3 img{
-	width: 100%;
+.reviews .author:last-child{
+    margin-bottom: 0;
 }
 
 @media (max-width: 1000px){
 
-	div.contents-box2,
-	div.contents-box3,
-	div.img-box2{
-		flex-basis: 100%;
+	.reviews .quote{
+		font-size: 20px;
+	}
+
+	.reviews .author{
+	    font-size: 16px;
 	}
 
 }
+.reviews .grid li{
+	padding: 20px;
+	height: 350px;
+	border-radius: 3px;
+
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+}
+
+.reviews .grid li.small{
+	flex-basis: 40%;
+}
+
+.reviews .grid li.large{
+	flex-basis: 100%;
+}
+
 
 /*---------------------
  	Contact Section
@@ -421,13 +423,13 @@ div.img-box2 {
 	.contact{
 		padding: 10px 5px;
 		background-color: #fff8ea;
-		margin: 1em 1em 0em 1em;
+		margin-top: 20px;
 	}
 
 }
 .contact{
 	background-color: #fff8ea;
-	margin: 1em 1em 0em 1em;
+	margin-top: 20px;
 }
 
 .contact form{

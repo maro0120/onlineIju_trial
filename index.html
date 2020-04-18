@@ -1,359 +1,189 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# prefix属性: http://ogp.me/ns/ prefix属性#">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>オンライン移住相談</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
 
-  	<!-- 
-	//////////////////////////////////////////////////////
+	<meta property="og:url" content=" ページの URL" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="オンライン移住相談" />
+	<meta property="og:description" content=" オンライン移住相談サイトです" />
+	<meta property="og:site_name" content="オンライン移住相談サイト" />
+	<meta property="og:image" content=" サムネイル画像の URL" />
+	<meta name="twitter:card" content="Summary with Large Image" />
+	<meta name="twitter:site" content="@ツイッターユーザー名" />
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
+    <title>オンライン移住相談</title>
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		
+		<link href='packages/core/main.css' rel='stylesheet' />
+		<link href='packages/daygrid/main.css' rel='stylesheet' />
+		<link href='packages/list/main.css' rel='stylesheet' />
+		<script src='packages/core/main.js'></script>
+		<script src='packages/interaction/main.js'></script>
+		<script src='packages/daygrid/main.js'></script>
+		<script src='packages/list/main.js'></script>
+		<script src='packages/core/locales-all.js'></script>
+		<script src='packages/google-calendar/main.js'></script>
+		<script src='js/script.js'></script>
+
+		<!-- <style>
+		
+			body {
+				margin: 40px 10px;
+				padding: 0;
+				font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+				font-size: 14px;
+			}
+		
+			#loading {
+				display: none;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+			}
+		
+			#calendar {
+				max-width: 900px;
+				margin: 0 auto;
+			}
+		
+		</style> -->
+</head>
+
+<body>
+
+	<header>
+		<p class="logo">
+			<a href="#hero"></a>
+		<p>
+		<!-- <h2><a href="#">Website Logo</a></h2> -->
+		<!-- <nav>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contacts</a></li>
+		</nav> -->
+	</header>
+
+
+	<section class="hero" id="hero">
+		<div class="background-image"></div>
+		<span><h1>オンライン</h1></span><span><h1>移住相談</span></h1>
+		<h3>オンライン移住相談サイト</h3>
+	</section>
+
+
+	<section class="features">
+		<h3 class="title">
+			<span class="under line1">現地に行かずに情報収集</span><br>
+			<span class="under line1">岡山県への移・職・住</span>
+			<span class="under line1">サポートオンライン相談</span>
+		</h3>
+		<p><span class="line1">地方で新たな暮らしをはじめたい。</span><br>
+			<span class="line1">そう思ったらまずは気軽に相談してみよう。</span>
+		</p>
+		<p>
+			<span class="line1">あなたにとっての新たな暮らしを</span><br>
+			<span class="line1">移(うつる)・職(はたらく)・住(くらす)の</span>
+			<span class="line1">全てのポイントでサポートします！</span></p>
+		<hr>
+
+		<ul class="grid">
+			<li>
+				<i class="fa fa-camera-retro"></i>
+				<h4><span>Photography</span></h4>
+				<p>説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
+			</li>
+			<li>
+				<i class="fa fa-cubes"></i>
+				<h4><span>Web Development</span></h4>
+				<p>説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
+			</li>
+			<li>
+				<i class="fa fa-newspaper-o"></i>
+				<h4><span>Content Editing</span></h4>
+				<p>説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
+			</li>
+		</ul>
+	</section>
 	
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 	https://www.facebook.com/fh5co
 
-	//////////////////////////////////////////////////////
-	 -->
+	<section class="our-work">
+		<h3 class="title">
+			<span class="under line1">まずは気軽にエントリー！</span><br>
+			<span class="under line1">申し込みフォーム1本で予約完了</span>
+		</h3>
+		<p>
+			<span class="line1">下記の申し込みフォームから</span>
+			<span class="line1">エントリーしていただくと</span><br>
+			<span class="line1">担当アドバイザーよりSNS or メールにて</span>
+			<span class="line1">お返事が届きます。</span><br>
+			<span class="line1">後は、届いたURLで</span>
+			<span class="line1">オンライン相談室にインするだけ！</span>
+		</p>
+		
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLScJBa2U33XW7e0F2IDlsAnQqIuD2pLuZs5NMzcjXQfjvujiDg/viewform" class="btn">申し込みフォーム</a>
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+		<div class="linkbtn">
 
-  	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  	<link rel="shortcut icon" href="favicon.ico">
+			
+		</div>
+	</section>
 
-  	<!-- Google Webfont -->
-	<!-- <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'> -->
-	<!-- Themify Icons -->
-	<link rel="stylesheet" href="css/themify-icons.css">
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Superfish -->
-	<link rel="stylesheet" href="css/superfish.css">
-	<!-- Easy Responsive Tabs -->
-	<link rel="stylesheet" href="css/easy-responsive-tabs.css">
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Theme Style -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
 
 	<section class="reviews">
 		<h3 class="title"><span class="under">新見市ってどんなところ？</span></h3>
+		<ul class="grid">
+			<!-- <li class="small" style="background-image: url(img/coast.jpg);"></li> -->
+			<li class="large" style="background-image: url(img/island.jpg);"></li>
+			<!-- <li class="large" style="background-image: url(img/balloon.jpg);"></li>
+			<li class="small" style="background-image: url(img/mountain.jpg);"></li> -->
+		</ul>
 
+		<p class="quote">Mauris sit amet mauris a arcu eleifend ultricies eget ut dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+		<p class="author">— Patrick Farrell</p>
 
-		<div class="grid">
-			<div class="contents-box2">
-				<span class="line1 margin-btm">・岡山県の北西部（中山間地域）</span><br>
-				<span class="line1 margin-btm">・1市4町が合併した大きなまちで、自然環境が住むエリアによって選べます</span><br>
-				<span class="line1 margin-btm">・ピオーネ、トマト、リンドウなど農業が盛んに行われています</span><br>
-				<span class="line1 margin-btm">・一級河川高梁川の原流域で湧水ポイント多数あります</span><br>
-				<span class="line1 margin-btm">・山林面積約87%で林業が盛んに行われています</span><br>
-				<span class="line1 margin-btm">・新見市北部は積雪エリア。冬はスキーも楽しめます</span><br>
-				<span class="line1 margin-btm">・市内全域光インターネット完備です</span><br>
-				<span class="line1 margin-btm">・市内２か所に中国自動車道ICあります（新見IC、大佐IC）</span>
-			</div>
-			<div class="img-box2"><img src="img/niimi.png"></div>
-			<div class="grid">
-				<div class="contents-box3">
-					<img src="img/1.png">
-					<div><span class="line1 aligh-left">内科、小児科、眼科などの一般診療所は２３件、総合病院が４件、歯科院が１０件あります。
-					</span></div>
-				</div>
-				<div class="contents-box3">
-					<img src="img/2.png">
-					<div><span class="line1 aligh-left">内科、小児科、眼科などの一般診療所は２３件、総合病院が４件、歯科院が１０件あります。
-					</span></div>
-				</div>
-				<div class="contents-box3">
-					<img src="img/3.png">
-					<div><span class="line1 aligh-left">内科、小児科、眼科などの一般診療所は２３件、総合病院が４件、歯科院が１０件あります。
-					</span></div>
-				</div>
-			</div>
+		<p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<p class="author">— George Smith</p>
 
-				
-
-		</div>
-
-			</div>
-		</header>
-		
-		
-		<div id="fh5co-hero" style="background-image: url(images/slide_2.jpg);">
-			<div class="overlay"></div>
-			<a href="#fh5co-main" class="smoothscroll fh5co-arrow to-animate hero-animate-4"><i class="ti-angle-down"></i></a>
-			<!-- End fh5co-arrow -->
-			<div class="container">
-				<div class="col-md-12">
-					<div class="fh5co-hero-wrap">
-						<div class="fh5co-hero-intro">
-							<h1 class="to-animate hero-animate-1">オンライン移住相談</h1>
-							<h2 class="to-animate hero-animate-2">オンラインで移住相談ができるサイトです</h2>
-							<!-- <p class="to-animate hero-animate-3"><a href="#" class="btn btn-outline btn-md">Sign up</a></p> -->
-						</div>
-					</div>
-				</div>
-			</div>		
-		</div>
-
-		<div id="fh5co-main">
-			
-			<div class="fh5co-cards">
-				<div class="container-fluid" id="products">
-					<div class="row animate-box">
-						<div class="col-md-12 heading text-center"><h2>Products</h2></div>
-					</div>
-					<div class="row">
-						<div class="col-lg-3 col-md-6 col-sm-6 animate-box">
-							<a class="fh5co-card" href="#">
-								<img src="images/img_large_1.jpg" alt="Free HTML5 Bootstrap template" class="img-responsive">
-								<div class="fh5co-card-body">
-									<h3>カードスタイルリンク</h3>
-									<p>説明</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6 animate-box">
-							<a class="fh5co-card" href="#">
-								<img src="images/img_large_2.jpg" alt="Free HTML5 Bootstrap template" class="img-responsive">
-								<div class="fh5co-card-body">
-									<h3>カードスタイルリンク</h3>
-									<p>説明</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6 animate-box">
-							<a class="fh5co-card" href="#">
-								<img src="images/img_large_2.jpg" alt="Free HTML5 Bootstrap template" class="img-responsive">
-								<div class="fh5co-card-body">
-									<h3>カードスタイルリンク</h3>
-									<p>説明</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6 animate-box">
-							<a class="fh5co-card" href="#">
-								<img src="images/img_large_3.jpg" alt="Free HTML5 Bootstrap template" class="img-responsive">
-								<div class="fh5co-card-body">
-									<h3>カードスタイルリンク</h3>
-									<p>説明</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				
-				<div class="row text-center" id="fh5co-features">
-					<div class="col-md-12 heading animate-box" id="awesome"><h2>Icon</h2></div>
-					<div class="col-md-4 col-sm-6 text-center fh5co-feature feature-box">
-						<div class="fh5co-feature-icon">
-							<i class="ti-mobile"></i>
-						</div>
-						<h3 class="heading">Mobile</h3>
-						<p>説明</p>
-					</div>
-					<div class="col-md-4 col-sm-6 text-center fh5co-feature feature-box"> 
-						<div class="fh5co-feature-icon">
-							<i class="ti-lock"></i>
-						</div>
-						<h3 class="heading">Lock</h3>
-						<p>説明</p>
-					</div>
-
-					<div class="clearfix visible-sm-block"></div>
-
-					<div class="col-md-4 col-sm-6 text-center fh5co-feature feature-box"> 
-						<div class="fh5co-feature-icon">
-							<i class="ti-video-camera"></i>
-						</div>
-						<h3 class="heading">Video</h3>
-						<p>説明</p>
-					</div>
-
-					<div class="clearfix visible-md-block visible-lg-block"></div>
-
-					<div class="col-md-4 col-sm-6 text-center fh5co-feature feature-box">
-						<div class="fh5co-feature-icon">
-							<i class="ti-shopping-cart"></i>
-						</div>
-						<h3 class="heading">Shop</h3>
-						<p>説明</p>
-					</div>
-
-					<div class="clearfix visible-sm-block"></div>
-
-					<div class="col-md-4 col-sm-6 text-center fh5co-feature feature-box"> 
-						<div class="fh5co-feature-icon">
-							<i class="ti-palette"></i>
-						</div>
-						<h3 class="heading">Pallete</h3>
-						<p>説明</p>
-					</div>
-					<div class="col-md-4 col-sm-6 text-center fh5co-feature feature-box"> 
-						<div class="fh5co-feature-icon">
-							<i class="ti-truck"></i>
-						</div>
-						<h3 class="heading">Deliver</h3>
-						<p>説明</p>
-					</div>
-				</div>
-				<!-- END row -->
-				
-			</div>
-			<!-- END container -->
-
-			<div class="animate-box fh5co-product-2">
-				<div class="fh5co-half img" style="background-image: url(images/img_large_6.jpg);">
-					
-				</div>
-				<div class="fh5co-half" id="symbol">
-					<h3>This is Symbol</h3>
-					<p>説明 </p>
-					<!-- <p><a href="#" class="btn btn-outline btn-md">Get Started</a></p> -->
-				</div>
-			</div>
-
-			<div id="fh5co-testimonial">
-
-					<div class="container" id="slider">
-				<div class="row">
-					<!-- Start Slider Testimonial -->
-	            <h2 class="fh5co-uppercase-heading-sm text-center animate-box">スライダースタイル</h2>
-	            <div class="fh5co-spacer fh5co-spacer-xs"></div>
-	            <div class="owl-carousel-fullwidth animate-box">
-	            <div class="item">
-	              <p class="text-center quote">&ldquo;Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained. &rdquo; <cite class="author">&mdash; Ferdinand A. Porsche</cite></p>
-	            </div>
-	            <div class="item">
-	              <p class="text-center quote">&ldquo;Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while. &rdquo;<cite class="author">&mdash; Steve Jobs</cite></p>
-	            </div>
-	            <div class="item">
-	              <p class="text-center quote">&ldquo;I think design would be better if designers were much more skeptical about its applications. If you believe in the potency of your craft, where you choose to dole it out is not something to take lightly. &rdquo;<cite class="author">&mdash; Frank Chimero</cite></p>
-	            </div>
-	          </div>
-	           <!-- End Slider Testimonial -->
-						 <div class="container" id="online">
-				
-							<div class="row text-center" id="fh5co-features">
-								<div class="col-md-12 heading animate-box">
-								<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJBa2U33XW7e0F2IDlsAnQqIuD2pLuZs5NMzcjXQfjvujiDg/viewform?embedded=true" width="100%" height="1432" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
-								</div>
-								</div>
-				</div>
-				<!-- END row -->
-				</div>
-			</div>
+		<p class="quote">Donec commodo dolor augue, vitae faucibus tortor tincidunt in. Aliquam vitae leo quis mi pulvinar ornare. Integer eu iaculis metus.</p>
+		<p class="author">— Kevin Blake</p>
 
 		
-		</div>
-		<!-- END fhtco-main -->
+	</section>
 
 
-		<footer role="contentinfo" id="fh5co-footer">
-			<a href="#" class="fh5co-arrow fh5co-gotop footer-box"><i class="ti-angle-up"></i></a>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-6 footer-box">
-						<h3 class="fh5co-footer-heading">Company</h3>
-						<ul class="fh5co-footer-links">
-							<li><a href="#">About</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Our Products</a></li>
-							<li><a href="#">Our Culture</a></li>
-							<li><a href="#">Team</a></li>
-						</ul>
 
-					</div>
-					<div class="col-md-4 col-sm-6 footer-box">
-						<h3 class="fh5co-footer-heading">More Links</h3>
-						<ul class="fh5co-footer-links">
-							<li><a href="#">Terms &amp; Conditions</a></li>
-							<li><a href="#">Our Careers</a></li>
-							<li><a href="#">Support &amp; FAQ's</a></li>
-							<li><a href="#">Sign up</a></li>
-							<li><a href="#">Log in</a></li>
-						</ul>
-					</div>
-					<div class="col-md-4 col-sm-12 footer-box">
-						<h3 class="fh5co-footer-heading">Get in touch</h3>
-						<ul class="fh5co-social-icons">
-							
-							<li><a href="#"><i class="ti-google"></i></a></li>
-							<li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-							<li><a href="#"><i class="ti-facebook"></i></a></li>	
-							<li><a href="#"><i class="ti-instagram"></i></a></li>
-							<li><a href="#"><i class="ti-dribbble"></i></a></li>
-						</ul>
-					</div>
-					<div class="col-md-12 footer-box text-center">
-						<div class="fh5co-copyright">
-						<p>&copy; 2015 Free Valet. All Rights Reserved. <br>Designed by <a href="http://freehtml5.co" target="_blank">FREEHTML5.co</a> Images by: <a href="http://unsplash.com" target="_blank">Unsplash</a></p>
-						</div>
-					</div>
-					
-				</div>
-				<!-- END row -->
-				<div class="fh5co-spacer fh5co-spacer-md"></div>
-			</div>
-		</footer>
-			
-			
-		<!-- jQuery -->
-		<script src="js/jquery-1.10.2.min.js"></script>
-		<!-- jQuery Easing -->
-		<script src="js/jquery.easing.1.3.js"></script>
-		<!-- Bootstrap -->
-		<script src="js/bootstrap.js"></script>
-		<!-- Owl carousel -->
-		<script src="js/owl.carousel.min.js"></script>
-		<!-- Magnific Popup -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<!-- Superfish -->
-		<script src="js/hoverIntent.js"></script>
-		<script src="js/superfish.js"></script>
-		<!-- Easy Responsive Tabs -->
-		<script src="js/easyResponsiveTabs.js"></script>
-		<!-- FastClick for Mobile/Tablets -->
-		<script src="js/fastclick.js"></script>
-		<!-- Parallax -->
-		<script src="js/jquery.parallax-scroll.min.js"></script>
-		<!-- Waypoints -->
-		<script src="js/jquery.waypoints.min.js"></script>
-		<!-- Main JS -->
-		<script src="js/main.js"></script>
+	<section class="contact">
+		<div id='loading'>loading...</div>
+		<h3 class="title"><span class="under">ご予約カレンダー</span></h3>
+		<div id='calendar'></div>
+	</section>
 
-	</body>
+<!--
+	<section class="contact" style="background-color: #ffffff;">
+		<iframe src="https://calendar.google.com/calendar/embed?src=e4givsn29n5pkjoh79r67e5ohs%40group.calendar.google.com&ctz=Asia%2FTokyo&amp;showTabs=0&amp;showPrint=0&amp;showCalendars=0" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	</section>
+ -->
+
+	<footer>
+		<ul>
+			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-github-square""></i></a></li>
+		</ul>
+		<p>footer</p>
+	</footer>
+
+</body>
+
 </html>
