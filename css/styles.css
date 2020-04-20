@@ -15,23 +15,9 @@ body {
 	background-color: #fff;
 	font-feature-settings: "palt";
 }
-html {
-  font-size: calc(100vw * .03126);
-}
-
-/* min */
-@media(max-width: 320px) {
-  html {
-    font-size: calc(320px * .03126);
-  }
-}
-
-/* max */
-@media(min-width: 521px) {
-  html {
-    font-size: calc(520px * .03126);
-  }
-}
+font-size: calc(1.25vw + 12px);
+@media(max-width: 320px) {font-size: 100%;}
+@media(min-width: 961px) {font-size: 150%;}
 html{
 	/* font: normal 16px sans-serif; */
 	color: #555;
