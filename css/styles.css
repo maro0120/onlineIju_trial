@@ -15,16 +15,22 @@ body {
 	background-color: #fff;
 	font-feature-settings: "palt";
 }
-font-size: calc(1.20vw + 12px);
-@media(max-width: 320px) {font-size: 100%;}
-@media(min-width: 961px) {font-size: 150%;}
+
 html{
 	/* font: normal 16px sans-serif; */
 	color: #555;
+	font-size: calc(1.20vw + 12px);
 }
 
-ul, nav{
-	list-style: none;
+@media(max-width: 320px) {
+	html{
+		font-size: 100%;
+	}
+}
+@media(min-width: 961px) {
+	html{
+		font-size: 150%;
+	}
 }
 
 a{
