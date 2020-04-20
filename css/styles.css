@@ -15,7 +15,7 @@ body {
 	background-color: #fff;
 	font-feature-settings: "palt";
 }
-font-size: calc(1.25vw + 12px);
+font-size: calc(1.20vw + 12px);
 @media(max-width: 320px) {font-size: 100%;}
 @media(min-width: 961px) {font-size: 150%;}
 html{
@@ -209,7 +209,7 @@ header nav li:last-child{
 .hero{
 	position: relative;
 	justify-content: center;
-	min-height: 100vh;
+	min-height: 80vh;
 	color: #000000;
 	text-align: center;
 }
