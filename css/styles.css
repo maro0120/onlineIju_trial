@@ -429,7 +429,7 @@ div.grid{
 .reviews div.img-box2 {
 	flex-basis: 60%;
 	text-align: center;
-	margin: 1em;
+	margin: 0em 0em 0em 0em;
 }
 
 .img-box2 img{
