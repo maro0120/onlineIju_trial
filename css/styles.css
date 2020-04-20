@@ -410,7 +410,7 @@ div.grid{
 }
 
 .reviews div.contents-box2 {
-	flex-basis: 50%;
+	flex-basis: 35%;
 	text-align: left;
 	margin: 1em;
 }
@@ -427,13 +427,13 @@ div.grid{
 }
 
 .reviews div.img-box2 {
-	flex-basis: 45%;
+	flex-basis: 60%;
 	text-align: center;
 	margin: 1em;
 }
 
 .img-box2 img{
-	width: 90%;
+	width: 100%;
 }
 
 .contents-box3 img{
