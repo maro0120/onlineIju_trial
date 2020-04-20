@@ -9,7 +9,7 @@
 }
 body {
 	font-family: ryo-gothic-plusn, "Helvetica", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-	font-size: 14px;
+
 	text-align: center;
 	color: #0a0e1f;
 	background-color: #fff;
@@ -33,7 +33,7 @@ html {
   }
 }
 html{
-	font: normal 16px sans-serif;
+	/* font: normal 16px sans-serif; */
 	color: #555;
 }
 
@@ -139,7 +139,8 @@ section h3.title{
 	font-weight: bold;
 	margin-bottom: 35px;
 	text-align: center;
-  padding-bottom: 2px;
+	padding-bottom: 2px;
+	letter-spacing: 0.15em;
 }
 @media screen and (max-width: 900px){
 	section h3.title {
