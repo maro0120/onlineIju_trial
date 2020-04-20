@@ -128,14 +128,14 @@ section.hero{
 section h3.title{
 	color: #414a4f;
 	text-transform: capitalize; 
-	font: bold 2em 'Open Sans', sans-serif;
+	font: bold 2em "Amiko", sans-serif;
 	margin-bottom: 35px;
 	text-align: center;
   padding-bottom: 2px;
 }
 @media screen and (max-width: 900px){
 	section h3.title {
-		font: bold 1.2em 'Open Sans', sans-serif;
+		font: bold 1.2em "Amiko", sans-serif;
 	}
 }
 section p{
@@ -237,17 +237,17 @@ header nav li:last-child{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background:linear-gradient(90deg,#191970 0%,#191970 50%,#ffdc00 50%,#ffdc00 100%);
+	background:linear-gradient(90deg,#0b0b33 0%,#0b0b33 50%,#ffdc00 50%,#ffdc00 100%);
 	opacity: 0.75;
 }
 
 .hero h1{
-	font: bold 3em 'Open Sans', sans-serif;
+	font: bold 3em "Amiko", sans-serif;
 	margin-bottom: 15px;
 }
 
 .hero h3{
-	font: normal 28px 'Open Sans', sans-serif;
+	font: normal 28px "Amiko", sans-serif;
 	margin-bottom: 40px;
 }
 
