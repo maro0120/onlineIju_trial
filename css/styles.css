@@ -51,26 +51,29 @@ li.icons{
 }
 
 h4 span{
-	border-bottom: solid 4px #ffcf07;
+	border-bottom: solid 4px #ffdc00;
 }
 
 a.btn{
 	color: #000000;
-	border-radius: 4px;
+	border-radius: 1em;
+	border: solid 0.3rem #000;
 	text-transform: uppercase;
-	background-color: #ffcf07;
+	background-color: #ffdc00;
 	font-weight: 800;
 	text-align: center;
 	font-size: 2em;
 	padding: 0.8em 5em;
+
 }
 
 @media screen and (max-width: 900px){
 	a.btn{
 		color: #000000;
-		border-radius: 4px;
+		border-radius: 1em;
+		border: solid 0.3rem #000;
 		text-transform: uppercase;
-		background-color: #ffcf07;
+		background-color: #ffdc00;
 		font-weight: 800;
 		text-align: center;
 		font-size: 1.2em;
@@ -81,7 +84,7 @@ a.btn{
 hr{
 	width: 150px;
 	height: 2px;
-	background-color: #ffcf07;
+	background-color: #ffdc00;
 	border: 0;
 	margin-bottom: 80px;
 }
@@ -137,7 +140,6 @@ ul.grid{
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
 
 /*-------------
  	Header
@@ -212,7 +214,7 @@ header nav li:last-child{
 	width: 100%;
 	height: 100%;
 	background-size: cover;
-	background:linear-gradient(90deg,#5208FF 0%,#5208FF 50%,#ffcf07 50%,#ffcf07 100%);
+	background:linear-gradient(90deg,#5208FF 0%,#5208FF 50%,#ffdc00 50%,#ffdc00 100%);
 	z-index: -1;
 }
 
@@ -223,7 +225,7 @@ header nav li:last-child{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background:linear-gradient(90deg,#5208FF 0%,#5208FF 50%,#ffcf07 50%,#ffcf07 100%);
+	background:linear-gradient(90deg,#191970 0%,#191970 50%,#ffdc00 50%,#ffdc00 100%);
 	opacity: 0.75;
 }
 
@@ -261,14 +263,18 @@ header nav li:last-child{
 
 }
 
-
+div.img-box2 {
+	flex-basis: 50%;
+	text-align: center;
+	margin: 0em;
+}
 
 /*--------------------
  	Our Work Section
 ---------------------*/
 
 .our-work{
-	background-color: #fff8ea;
+	background-color: #fff3b8;
 	margin: 1em 1em 0em 1em;
 }
 
@@ -308,7 +314,7 @@ header nav li:last-child{
 ----------------------*/
 
 .features{
-	background-color: #fff8ea;
+	background-color: #fff3b8;
 	margin: 1em 1em 0em 1em;
 }
 
@@ -322,8 +328,18 @@ header nav li:last-child{
 
 .features .grid li i{
     font-size: 50px;
-    color: #ffcf07;
+    color: #ffdc00;
     margin-bottom: 25px;
+}
+
+.features .grid li img{
+	width: 100%;
+}
+
+@media screen and (max-width: 900px){
+	.features .grid li img{
+		width: 70%;
+	}
 }
 
 .features .grid li h4{
@@ -371,7 +387,7 @@ header nav li:last-child{
 --------------------*/
 
 .reviews{
-	background-color: #fff8ea;
+	background-color: #fff3b8;
 	margin: 1em 1em 0em 1em;
 }
 div.grid{
@@ -381,12 +397,12 @@ div.grid{
 
 }
 
-div.contents-box2 {
-	flex-basis: 45%;
+.reviews div.contents-box2 {
+	flex-basis: 50%;
 	text-align: left;
 	margin: 1em;
 }
-div.contents-box3 {
+.reviews div.contents-box3 {
 	flex-basis: 31%;
 	text-align: center;
 	margin: 0.5em;
@@ -398,7 +414,7 @@ div.contents-box3 {
 	text-align: left;
 }
 
-div.img-box2 {
+.reviews div.img-box2 {
 	flex-basis: 45%;
 	text-align: center;
 	margin: 1em;
@@ -409,14 +425,15 @@ div.img-box2 {
 }
 
 .contents-box3 img{
-	width: 90%;
+	width: 100%;
+	height: 100%;
 }
 
 @media (max-width: 1000px){
 
-	div.contents-box2,
-	div.contents-box3,
-	div.img-box2{
+	.reviews div.contents-box2,
+	.reviews div.contents-box3,
+	.reviews div.img-box2{
 		flex-basis: 100%;
 	}
 
@@ -429,15 +446,45 @@ div.img-box2 {
 
 	.contact{
 		padding: 10px 5px;
-		background-color: #fff8ea;
+		background-color: #fff3b8;
 		margin: 1em 1em 0em 1em;
 	}
 
 }
 .contact{
-	background-color: #fff8ea;
+	background-color: #fff3b8;
 	margin: 1em 1em 0em 1em;
 }
+
+.contact .grid li{
+	padding: 30px 30px;
+	margin: 0px 5px;
+	flex-basis: 45%;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.contact .grid li i{
+    font-size: 50px;
+    color: #ffdc00;
+    margin-bottom: 25px;
+}
+
+.contact .grid li img{
+	width: 100%;
+}
+
+/* @media (max-width: 1000px){
+
+	.contact .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+	.contact .grid li img{
+		width: 70%;
+	}
+
+} */
 
 .contact form{
 	display: flex;
@@ -591,8 +638,8 @@ iframe {
 
 /* -- fc-button -- */
 .fc-button {
-	background-color: #ffcf07 !important;
-	border-color: #ffcf07 !important;
+	background-color: #ffdc00 !important;
+	border-color: #ffdc00 !important;
 }
 
 @media screen and (max-width: 900px){
@@ -604,7 +651,7 @@ iframe {
 
 span.under {
 	text-decoration:underline;
-	text-decoration-color:#ffcf07;
+	text-decoration-color:#ffdc00;
 }
 
 span.line1 {
