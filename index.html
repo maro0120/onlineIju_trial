@@ -14,13 +14,14 @@
 	<meta name="twitter:card" content="Summary with Large Image" />
 	<meta name="twitter:site" content="@ツイッターユーザー名" />
 
-    <title>オンライン移住相談</title>
+	<title>オンライン移住相談</title>
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> -->
-	<link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/hamburger.css">
 		
 		<link href='packages/core/main.css' rel='stylesheet' />
 		<link href='packages/daygrid/main.css' rel='stylesheet' />
@@ -42,14 +43,15 @@
 				},
 				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 			})(document);
+			
 		</script>
 </head>
 
 <body>
 
-	<header>
+	<!-- <header>
 		<p class="logo">
-			<a href="#hero"></a>
+			<a href="#home"></a>
 		<p>
 		<!-- <h2><a href="#">Website Logo</a></h2> -->
 		<!-- <nav>
@@ -57,22 +59,55 @@
 			<li><a href="#">Products</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Contacts</a></li>
-		</nav> -->
+		</nav>
+		<div class="hamburger hamburger--slider js-hamburger">
+			<div class="hamburger-box">
+				<div class="hamburger-inner">
+				</div>
+			</div>
+		</div>
+
+	</header> -->
+
+	<header class="header">
+		<hgroup>
+			<p class="logo"><a href="#home"><p>
+		</hgroup>
+		<nav class="pc_nav scroll">
+			<li class="g_nav_item" id="nav_click1"><a href="#home">ホーム</a></li>
+			<li class="g_nav_item" id="nav_click2"><a href="#features">サービス内容</a></li>
+			<li class="g_nav_item" id="nav_click3"><a href="#our-work">お申込み</a></li>
+			<li class="g_nav_item" id="nav_click4"><a href="#reviews">新見市について</a></li>
+		</nav>
+		<nav class="g_nav">
+			<ul class="g_nav_list">
+				<li class="g_nav_item" id="nav_click1"><a href="#home">ホーム</a></li>
+				<li class="g_nav_item" id="nav_click2"><a href="#features">サービス内容</a></li>
+				<li class="g_nav_item" id="nav_click3"><a href="#our-work">お申込み</a></li>
+				<li class="g_nav_item" id="nav_click4"><a href="#reviews">新見市について</a></li>
+			</ul>
+		</nav>
+		<div class="h_menu" id="h_menu_js">
+			<span class="h_menu_line h_menu_line_1"></span>
+			<span class="h_menu_line h_menu_line_2"></span>
+			<span class="h_menu_line h_menu_line_3"></span>
+		</div>
+		<div class="bg_open" id="bg_open_js"></div>
 	</header>
 
 
-	<section class="hero" id="hero">
+	<section class="hero" id="home">
 		<div class="background-image"></div>
 		<!-- <span><h1>オンライン</h1></span><span><h1>移住相談</span></h1>
 		<h3>オンライン移住相談サイト</h3> -->
 		<div class="grid">
-			<div class="img-box2" style="text-align: right;"><img style="max-width :500px;" src="img/uketsuke2.png" alt=""></div>
-			<div class="img-box2" style="text-align: left;"><img style="max-width :500px;" src="img/soudan.png" alt=""></div>
+			<div class="img-box2 sample sample-one" style="text-align: right; padding-right:3vw"><img style="max-width :400px;" src="img/syokuin.png" alt=""></div>
+			<div class="img-box2 sample sample-one" style="text-align: left; padding-left:3vw"><img style="max-width :400px;" src="img/soudansya.png" alt=""></div>
 		</div>
 	</section>
 
 
-	<section class="features">
+	<section class="features" id="features">
 		<h3 class="title">
 			<span class="under line1" style="margin-top: 0.3em; line-height: 1.3em">現地に行かずに情報収集</span><br>
 			<span class="under line1" style="margin-top: 0.3em; line-height: 1.3em">岡山県への移・職・住</span><br>
@@ -85,7 +120,6 @@
 			<span class="line1">あなたにとっての新たな暮らしを</span><br>
 			<span class="line1">移(うつる)・職(はたらく)・住(くらす)の</span>
 			<span class="line1">全てのポイントでサポートします！</span></p>
-		<hr>
 
 		<ul class="grid">
 			<li>
@@ -104,7 +138,7 @@
 	</section>
 	
 
-	<section class="our-work">
+	<section class="our-work" id="our-work">
 		<h3 class="title">
 			<span class="under line1">まずは気軽にエントリー！</span><br>
 			<span class="under line1">申し込みフォーム1本で予約完了</span>
@@ -127,7 +161,7 @@
 	</section>
 
 
-	<section class="reviews">
+	<section class="reviews" id="reviews">
 		<h3 class="title"><span class="under">新見市ってどんなところ？</span></h3>
 
 
@@ -148,17 +182,17 @@
 			<div class="grid">
 				<div class="contents-box3">
 					<div><img src="img/b.png"></div>
-					<div><span class="line1 aligh-left">内科、小児科、眼科などの一般診療所は２３件、総合病院が４件、歯科院が１０件あります。
+					<div class="aligh-left"><span class="line1">内科、小児科、眼科などの一般診療所は２３件、総合病院が４件、歯科院が１０件あります。
 					</span></div>
 				</div>
 				<div class="contents-box3">
 					<div><img src="img/t.png"></div>
-					<div><span class="line1 aligh-left">クリックしてから約1〜3日で荷物が届きます！
+					<div class="aligh-left"><span class="line1">クリックしてから約1〜3日で荷物が届きます！
 					</span></div>
 				</div>
 				<div class="contents-box3">
 					<div><img src="img/g.png"></div>
-					<div><span class="line1 aligh-left">小学校17校、中学校5校。公立高校1校、私立高校1校、公立大学1校があるまちです。
+					<div class="aligh-left"><span class="line1">小学校17校、中学校5校。公立高校1校、私立高校1校、公立大学1校があるまちです。
 					</span></div>
 				</div>
 			</div>
@@ -172,7 +206,7 @@
 
 
 
-	<section class="contact">
+	<section class="contact target" >
 		<div id='loading'>loading...</div>
 		<h3 class="title"><span class="under">ご予約カレンダー</span></h3>
 		<div id='calendar' style="background-color: #FFF;"></div>
@@ -190,7 +224,6 @@
 		</ul>
 	</section> -->
 
-
 	<footer>
 		<ul>
 			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
@@ -201,7 +234,8 @@
 		</ul>
 		<p>footer</p>
 	</footer>
-
+	<script src="js/hamburgers.js" async=""></script>
+	<script src="js/intersectionObserver.js" async=""></script>
 </body>
 
 </html>
