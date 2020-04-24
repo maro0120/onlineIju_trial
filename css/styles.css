@@ -458,10 +458,46 @@ div.grid{
 	height: 100%;
 }
 
+.reviews div.full-box {
+	flex-basis: 100%;
+	text-align: center;
+	padding-top: 5em;
+}
+
+.reviews div.ink-box2 {
+	flex-basis: 45%;
+	text-align: center;
+	margin: 1em;
+}
+.reviews a{
+  position: relative;
+  display: inline-block;
+	transition: .3s;
+	color: #004884;
+	font-weight: bold;
+}
+
+.reviews a::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #004884;
+  transition: .3s;
+  transform: translateX(-50%);
+}
+
+.reviews a:hover::after{
+  width: 100%;
+}
+
 @media (max-width: 1000px){
 
 	.reviews div.contents-box2,
 	.reviews div.contents-box3,
+	.reviews div.link-box2,
 	.reviews div.img-box2{
 		flex-basis: 100%;
 	}
@@ -651,8 +687,8 @@ iframe {
 
 .logo a {
 		display: block;
-		height: 73px;
-		width:100px;
+		height: 100px;
+		width:153px;
 		background: url(../img/logo.png) no-repeat;
 		background-size: contain;
 		font-size: 0;
@@ -700,7 +736,7 @@ span.line1 {
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 55px;
+	height: 100px;
 	padding-top: 0.5em;
 
 	z-index: 999;
