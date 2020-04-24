@@ -94,7 +94,7 @@ section{
 	flex-direction: column;
 	align-items: center;
 
-	padding: 125px 50px;
+	padding: 2em 1em;
 }
 section.hero{
 	display: flex;
@@ -106,10 +106,10 @@ section.hero{
 @media (max-width: 1000px){
 
 	section{
-		padding: 100px 25px;
+		padding: 2em 1em;
 	}
 	section.hero{
-		padding: 100px 0px;
+		padding: 2em 0;
 	}
 
 }
@@ -117,10 +117,10 @@ section.hero{
 @media (max-width: 600px){
 
 	section{
-		padding: 80px 15px;
+		padding: 2em 1em;
 	}
 	section.hero{
-		padding: 80px 0px;
+		padding: 2em 0;
 	}
 
 }
@@ -411,7 +411,9 @@ div.img-box2 {
 
 }
 
-
+.features img{
+	max-width: 300px;
+}
 
 /*--------------------
  	Reviews Section
@@ -425,11 +427,11 @@ div.grid{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-
+	justify-content: center;
 }
 
 .reviews div.contents-box2 {
-	flex-basis: 35%;
+	flex-basis: 45%;
 	text-align: left;
 	margin: 1em;
 }
@@ -442,7 +444,7 @@ div.grid{
 }
 
 .reviews div.img-box2 {
-	flex-basis: 60%;
+	flex-basis: 45%;
 	text-align: center;
 	margin: 0em 0em 0em 0em;
 }
@@ -642,24 +644,23 @@ iframe {
 }
 @media screen and (max-width: 900px){
 	.logo {
-			top: 8px;
-			left: 8px;
+		top: 8px;
+		left: 8px;
 	}
 }
 
 .logo a {
 		display: block;
-		width: 100px;
-		height: 52px;
-		background: url(../img/logo.svg) no-repeat;
+		height: 73px;
+		width:100px;
+		background: url(../img/logo.png) no-repeat;
 		background-size: contain;
 		font-size: 0;
 }
 
 @media screen and (max-width: 900px){
 	.logo a {
-			width: 65px;
-			height: 34px;
+			height: 40px;
 	}
 }
 
