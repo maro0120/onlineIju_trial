@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# prefix属性: http://ogp.me/ns/ prefix属性#">
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta property="og:url" content=" ページの URL" />
@@ -33,7 +33,8 @@
 		<script src='packages/core/locales-all.js'></script>
 		<script src='packages/google-calendar/main.js'></script>
 		<script src='js/script.js'></script>
-
+		<script src='js/intersection-observer-polyfill.js'></script>
+	
 		<script>
 			(function(d) {
 				var config = {
@@ -109,9 +110,9 @@
 
 	<section class="features" id="features">
 		<h3 class="title">
-			<span class="under line1" style="margin-top: 0.3em; line-height: 1.3em">現地に行かずに情報収集</span><br>
-			<span class="under line1" style="margin-top: 0.3em; line-height: 1.3em">岡山県への移・職・住</span><br>
-			<span class="under line1" style="margin-top: 0.3em; line-height: 1.3em">サポートオンライン相談</span>
+			<span class="under line1">現地に行かずに情報収集</span><br>
+			<span class="under line1">岡山県への移・職・住サポート</span><br>
+			<span class="under line1">オンライン相談</span>
 		</h3>
 		<p><span class="line1">地方で新たな暮らしをはじめたい。</span><br>
 			<span class="line1">そう思ったらまずは気軽に相談してみよう。</span>
@@ -120,19 +121,18 @@
 			<span class="line1">あなたにとっての新たな暮らしを</span><br>
 			<span class="line1">移(うつる)・職(はたらく)・住(くらす)の</span>
 			<span class="line1">全てのポイントでサポートします！</span></p>
-
 		<ul class="grid">
 			<li>
 				<img src="img/move2.png" alt="">
-				<p>説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
+				<p class="align-left">移住までのステップを移住希望時期からさかのぼり、あなただけの移住プランをサポートします。</p>
 			</li>
 			<li>
 				<img src="img/work.png" alt="">
-				<p>説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
+				<p class="align-left">起業・就業・継業など、あなたらしい地域での働き方が見つかるようサポートします。</p>
 			</li>
 			<li>
 				<img src="img/live.png" alt="">
-				<p>説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
+				<p class="align-left">田舎暮らしのお家といえば「古民家」。古民家暮らしについて、物件探しから改修までサポートします。</p>
 			</li>
 		</ul>
 	</section>
@@ -151,10 +151,8 @@
 			<span class="line1">後は、届いたURLで</span>
 			<span class="line1">オンライン相談室にインするだけ！</span>
 		</p>
-		
-		<a href="https://docs.google.com/forms/d/e/1FAIpQLScJBa2U33XW7e0F2IDlsAnQqIuD2pLuZs5NMzcjXQfjvujiDg/viewform" class="btn">申し込みフォーム</a>
-
-
+		<a href="https://timerex.net/s/iju-online/c4d950f4" class="btn">申し込みフォーム</a>
+		<div class="notes">※外部サイトに接続します</div>
 		<div style="margin-top: 3em;">
 			<img style="width: 100%; max-width :1000px;" src="img/flow_2.png" alt="">
 		</div>
@@ -162,9 +160,7 @@
 
 
 	<section class="reviews" id="reviews">
-		<h3 class="title"><span class="under">新見市ってどんなところ？</span></h3>
-
-
+		<h3 class="title"><span class="line1 under">新見市ってどんなところ？</span></h3>
 		<div class="grid">
 			<div class="img-box2"><img src="img/map2.png"></div>
 			<div class="contents-box2">
@@ -182,38 +178,39 @@
 			<div class="grid">
 				<div class="contents-box3">
 					<div><img src="img/b.png"></div>
-					<div class="aligh-left"><span class="line1">内科、小児科、眼科などの一般診療所は２３件、総合病院が４件、歯科院が１０件あります。
-					</span></div>
+					<div class="align-left">
+						<span class="line1">内科、小児科、眼科などの一般診療所は２３件、総合病院が４件、歯科院が１０件あります。
+						</span>
+					</div>
+					<div class="notes align-right">日本医師会発表データ参照2017年10月時点</div>
 				</div>
 				<div class="contents-box3">
 					<div><img src="img/t.png"></div>
-					<div class="aligh-left"><span class="line1">クリックしてから約1〜3日で荷物が届きます！
-					</span></div>
+					<div class="align-left">
+						<span class="line1">クリックしてから約1〜3日で荷物が届きます！
+						</span>
+					</div>
+					<div class="notes align-right">居住エリアと注文状況によって変動します</div>
 				</div>
 				<div class="contents-box3">
 					<div><img src="img/g.png"></div>
-					<div class="aligh-left"><span class="line1">小学校17校、中学校5校。公立高校1校、私立高校1校、公立大学1校があるまちです。
+					<div class="align-left"><span class="line1">小学校17校、中学校5校。公立高校1校、私立高校1校、公立大学1校があるまちです。
 					</span></div>
 				</div>
 			</div>
-
-				
-
 		</div>
-
-		
 	</section>
 
 
 
-	<section class="contact target" >
+	<!-- <section class="contact target" >
 		<div id='loading'>loading...</div>
 		<h3 class="title"><span class="under">ご予約カレンダー</span></h3>
 		<div id='calendar' style="background-color: #FFF;"></div>
 	</section>
 
 
-	<!-- <section class="contact" style="background-color: #ffffff;">
+	<section class="contact" style="background-color: #ffffff;">
 		<ul class="grid">
 			<li>
 				<img src="img/banner.png">
