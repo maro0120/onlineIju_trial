@@ -88,6 +88,8 @@ a.btn:hover{
 		text-align: center;
 		font-size: 1.2em;
 		padding: 0.8em 2em;
+		-webkit-transition: all .3s;
+  	transition: all .3s;
 	}
 }
 
