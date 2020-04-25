@@ -69,7 +69,10 @@ a.btn{
 	text-align: center;
 	font-size: 2em;
 	padding: 0.8rem 4rem;
+}
 
+a.btn:hover{
+	background-color: #FFFFFF;
 }
 
 @media screen and (max-width: 900px){
