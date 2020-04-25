@@ -69,6 +69,8 @@ a.btn{
 	text-align: center;
 	font-size: 2em;
 	padding: 0.8rem 4rem;
+	-webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 a.btn:hover{
