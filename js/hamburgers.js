@@ -12,6 +12,7 @@ function toggleNav() {
 	});
 	globalNav.addEventListener('click', function(e) {
 		body.classList.remove('menu_open');
+		window.history.replaceState(null, '', location.pathname + location.search);
   });
 }
 toggleNav();
