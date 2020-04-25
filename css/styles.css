@@ -493,7 +493,7 @@ div.grid{
   width: 100%;
 }
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
 
 	.reviews div.contents-box2,
 	.reviews div.contents-box3,
@@ -904,12 +904,12 @@ span.line1 {
 
 /* -- animation -- */
 
-.sample {
+/* .sample {
   overflow: hidden;
   position: relative;
 }
 
-/* 1 つ目のサンプル */
+/* 1 つ目のサンプル 
 .sample-one.sample-animation img {
   animation: sample-one 1.2s cubic-bezier(.4, 0, .2, 1);
 }
@@ -924,7 +924,21 @@ span.line1 {
     opacity: 0;
     transform: scale(1.2) translateY(24px);
   }
+} */
+.sample {
+  transition: opacity 1s, visibility 0s ease;
+	transition-duration: 2s;
+  opacity: 0;
+  visibility: hidden;
 }
+
+/* 1 つ目のサンプル */
+.sample-one.sample-animation {
+  transition-delay: 0s;
+  opacity: 1;
+  visibility: visible;
+}
+
 
 /* 2 つ目のサンプル */
 .sample-second.sample-animation {
