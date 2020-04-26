@@ -634,7 +634,6 @@ footer ul li:last-child{
 }
 
 footer p{
-	text-transform: uppercase;
 	font-size: 14px;
 	color: rgba(255,255,255,0.6);
 	margin-bottom: 10px;
@@ -889,11 +888,11 @@ span.line1 {
 	color: #000000 !important;
 }
 
-@media screen and (max-width: 900px){
+/* @media screen and (max-width: 900px){
 	.pc_nav {
 		display: none;
 	}
-}
+} */
 @media screen and (min-width: 901px){
 	.h_menu {
 		display: none;
@@ -1023,8 +1022,8 @@ span.line1 {
 
 
 
-@media screen and (min-width: 901px){
+/* @media screen and (min-width: 901px){
 	header.scrolled {
 	  background: #ffdc00;
 	}
-}
+} */
