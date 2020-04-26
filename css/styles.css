@@ -453,6 +453,7 @@ div.grid{
 	margin: 0.5em;
 	flex-direction: column;
 	display: flex;
+	background-color: #fff;
 }
 
 .reviews div.img-box2 {
