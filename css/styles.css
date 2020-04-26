@@ -454,6 +454,7 @@ div.grid{
 	flex-direction: column;
 	display: flex;
 	background-color: #fff;
+	padding: 2em;
 }
 
 .reviews div.img-box2 {
