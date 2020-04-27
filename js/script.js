@@ -1,44 +1,17 @@
-// document.addEventListener('DOMContentLoaded', function() {
-// 	var calendarEl = document.getElementById('calendar');
+(function(d) {
+	var config = {
+		kitId: 'mht5dfo',
+		scriptTimeout: 3000,
+		async: true
+	},
+	h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+})(document);
 
-// 	var calendar = new FullCalendar.Calendar(calendarEl, {
-
-// 		plugins: [ 'interaction', 'dayGrid', 'list', 'googleCalendar' ],
-
-// 		header: {
-// 			left: 'prev,next',
-// 			center: 'title',
-// 			right: ''
-// 		},
-// 		locale: 'ja',
-// 		businessHours: true, // display business hours
-
-// 		// THIS KEY WON'T WORK IN PRODUCTION!!!
-// 		// To make your own Google API key, follow the directions here:
-// 		// http://fullcalendar.io/docs/google_calendar/
-// 		googleCalendarApiKey: 'AIzaSyBEfl5Q2S_GzLf6ySfVvOx8gxUtT67ev2k',
-
-// 		events: {
-// 			googleCalendarId: 'e4givsn29n5pkjoh79r67e5ohs@group.calendar.google.com',
-// 			className: 'gcal-event' // an option!
-// 		},
-
-// 		eventClick: function(arg) {
-// 			// opens events in a popup window
-// 			//window.open(arg.event.url, 'google-calendar-event', 'width=700,height=600');
-
-// 			arg.jsEvent.preventDefault() // don't navigate in main tab
-// 		},
-
-// 		loading: function(bool) {
-// 			document.getElementById('loading').style.display =
-// 				bool ? 'block' : 'none';
-// 		}
-
-// 	});
-
-
-// 	calendar.render();
-// });
+window.onload = function(){
+	setTimeout(function(){
+		const spinner = document.getElementById('loading');
+		spinner.classList.add('loaded');
+	}, 1000);
+};
 
 window.history.replaceState(null, '', location.pathname + location.search);
