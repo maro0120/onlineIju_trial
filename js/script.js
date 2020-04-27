@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		// THIS KEY WON'T WORK IN PRODUCTION!!!
 		// To make your own Google API key, follow the directions here:
 		// http://fullcalendar.io/docs/google_calendar/
-		googleCalendarApiKey: 'AIzaSyBEfl5Q2S_GzLf6ySfVvOx8gxUtT67ev2k',
+		googleCalendarApiKey: '',
 
 		events: {
 			googleCalendarId: 'e4givsn29n5pkjoh79r67e5ohs@group.calendar.google.com',
