@@ -33,22 +33,13 @@
 		<script src='packages/google-calendar/main.js'></script> -->
 		<script src='js/script.js'></script>
 		<!-- <script src='js/intersection-observer-polyfill.js'></script> -->
-	
-		<script>
-			(function(d) {
-				var config = {
-					kitId: 'mht5dfo',
-					scriptTimeout: 3000,
-					async: true
-				},
-				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-			})(document);
-			
-		</script>
+
 </head>
 
 <body>
-
+<div id="loading">
+  <div class="spinner"></div>
+</div>
 	<!-- <header>
 		<p class="logo">
 			<a href="#home"></a>
@@ -81,9 +72,9 @@
 		</nav> -->
 		<nav class="g_nav">
 			<ul class="g_nav_list">
-				<li class="g_nav_item"><a href="#home">ホーム</a></li>
-				<li class="g_nav_item"><a href="#features">サービス内容</a></li>
-				<li class="g_nav_item"><a href="#our-work">お申込み</a></li>
+				<li class="g_nav_item"><a href="#home">トップ</a></li>
+				<li class="g_nav_item"><a href="#features">「START」とは</a></li>
+				<li class="g_nav_item"><a href="#our-work">エントリー</a></li>
 				<li class="g_nav_item"><a href="#reviews">新見市について</a></li>
 			</ul>
 		</nav>
@@ -101,8 +92,8 @@
 		<!-- <span><h1>オンライン</h1></span><span><h1>移住相談</span></h1>
 		<h3>オンライン移住相談サイト</h3> -->
 		<div class="grid">
-			<div class="img-box2 sample sample-one" style="text-align: right; padding-right:1vw"><img style="max-width :400px;" src="img/syokuin.png" alt=""></div>
-			<div class="img-box2 sample sample-one" style="text-align: left; padding-left:1vw"><img style="max-width :400px;" src="img/soudansya.png" alt=""></div>
+			<div class="img-box2 sample sample-one left-img"><img style="max-width :400px;" src="img/syokuin.png" alt=""></div>
+			<div class="img-box2 sample sample-one right-img"><img style="max-width :400px;" src="img/soudansya.png" alt=""></div>
 		</div>
 	</section>
 
