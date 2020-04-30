@@ -186,7 +186,7 @@ ul.grid{
 #loading {
 	width: 100vw;
 	height: 100vh;
-	transition: all 3s;
+	transition: all 1s;
 	transition-delay: 2s;
 	background-color: #FFF;
 	position: fixed;
