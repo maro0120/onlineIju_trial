@@ -932,30 +932,6 @@ span.line1 {
 
 
 
-
-/* -- animation -- */
-
-/* .sample {
-  overflow: hidden;
-  position: relative;
-}
-
-/* 1 つ目のサンプル 
-.sample-one.sample-animation img {
-  animation: sample-one 1.2s cubic-bezier(.4, 0, .2, 1);
-}
-
-@keyframes sample-one {
-  0% {
-    opacity: 0;
-    transform: scale(1.2) translateY(24px);
-  }
-  
-  32% {
-    opacity: 0;
-    transform: scale(1.2) translateY(24px);
-  }
-} */
 .sample {
   transition: opacity 1s, visibility 0s ease;
 	transition-duration: 2s;
@@ -1038,10 +1014,3 @@ span.line1 {
   }
 }
 
-
-
-/* @media screen and (min-width: 901px){
-	header.scrolled {
-	  background: #ffdc00;
-	}
-} */
