@@ -186,7 +186,8 @@ ul.grid{
 #loading {
 	width: 100vw;
 	height: 100vh;
-	transition: all 1s;
+	transition: all 2s;
+	transition-delay: 1s;
 	background-color: #FFF;
 	position: fixed;
 	top: 0;
@@ -194,36 +195,22 @@ ul.grid{
 	z-index: 9999;
 }
 .spinner {
-	width: 50vw;
-	height: 50vh;
-	margin: 20vh auto;
-	background: url(../img/logo.png) no-repeat;
-	background-repeat:  no-repeat;
-	background-position:center center;
-	background-size:contain;                               
-	animation-name: sk-scaleout;
-	animation-duration: 1s;
-	animation-timing-function: ease-in;
-	animation-delay: 1s;
-	animation-fill-mode:forwards;
+
 }
 /* ローディングアニメーション */
 @keyframes sk-scaleout {
-	from {
-		transform: scale(1.0);
-		/* opacity: 1; */
-	}
-	to {
-    transform: scale(3.0);
+  0% {
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
     opacity: 0;
-	}
+  }
 }
 
 .loaded {
   opacity: 0;
   visibility: hidden;
 }
-
 /*-------------
  	Header
 -------------*/
