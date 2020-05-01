@@ -1,8 +1,7 @@
-(() => {
-  const sample = document.querySelectorAll('.sample');
-  
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+(function () {
+  var sample = document.querySelectorAll('.sample');
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
       if (entry.intersectionRatio > 0) {
         entry.target.classList.add('sample-animation');
       } else {
@@ -10,9 +9,7 @@
       }
     });
   });
-  
-  sample.forEach(img => {
+  sample.forEach(function (img) {
     observer.observe(img);
   });
 })();
-
