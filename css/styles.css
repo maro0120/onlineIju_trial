@@ -194,9 +194,7 @@ ul.grid{
 	left: 0;
 	z-index: 9999;
 }
-.spinner {
 
-}
 /* ローディングアニメーション */
 @keyframes sk-scaleout {
   0% {
